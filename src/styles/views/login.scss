@@ -1,0 +1,108 @@
+.login-row {
+  .col {
+    padding: 0;
+  }
+  .mobile-line {
+    display: none;
+  }
+}
+
+.login-content {
+  width: 416px;
+  position: relative;
+  top: 50%;  
+  left: 50%;
+  transform: translate(-50%, -55%);
+  .subheader {
+    font-size: 16px;
+    font-weight: 700;
+    color: #BF9D7D;
+    line-height: 24px;
+    letter-spacing: 2%;
+  }
+  .header {
+    color: #fff;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57.6px;
+    letter-spacing: 5%;
+    margin-bottom: 40px;
+  }
+  .login-form {
+    label {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 2%;
+      color: #fff;
+    }
+    .input-control, .submit-btn {
+      padding: 16px;
+    }
+    a {
+      color: #BF9D7D;
+      text-decoration: underline;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 2%;
+      cursor: pointer;
+      &:hover {
+        color: #BF9D7D;
+      }
+    }
+  }
+  .submit-btn {
+    color: #909090;
+    background-color: #fff;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 2%;
+    margin: 40px 0;
+    &:active, &.active {
+      background-color: #BF9D7D;
+    }
+  }
+  span {
+    color: #fff;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 2%;
+    margin-right: 8px;
+  }
+}
+
+@media(max-width:990px) {
+  .register-img {
+    display: none;
+  }
+
+  .mobile-line {
+    display: block !important;
+  }
+
+  .desktop-line {
+    display: none;
+  }
+
+  .login-content {
+    width: 416px;
+    position: relative;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -30%);
+    .subheader {
+      font-size: 14px;
+      line-height: 21px;
+    }
+    .header {
+      font-size: 32px;
+      line-height: 38.4px;
+    }
+    .login-form {
+      label, a, span {
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+  }
+}

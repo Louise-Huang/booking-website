@@ -1,0 +1,15 @@
+.booking-navbar {
+  padding: 24px 80px;
+  img {
+    width: 196px;
+  }
+}
+
+@media(max-width:990px) {
+  .booking-navbar {
+    padding: 16px 12px;
+    img {
+      width: 109.76px;
+    }
+  }
+}

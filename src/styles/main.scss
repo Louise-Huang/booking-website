@@ -1,0 +1,9 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// views
+@import "../styles/views/index.scss";
+@import "../styles/views/login.scss";
+
+// components
+@import "../styles/layout/navbar.scss";
