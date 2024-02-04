@@ -1,7 +1,6 @@
 import { Form, Button } from 'react-bootstrap'
 import { useForm } from 'react-hook-form'
 import { useImmer } from 'use-immer'
-import { useHistory } from 'react-router-dom'
 import axios from 'axios'
 import Swal from 'sweetalert2'
 import { Progressbar } from '.'
@@ -50,7 +49,6 @@ export default function SignupStep2 (props: { signupForm: Step1Form }) {
     areaArray: AreaData[0].AreaList.map(area => area.AreaName)
   })
   const { yearsArray, monthsArray, daysArray, cityArray, areaArray } = state
-  const history = useHistory()
   const { register, handleSubmit, getValues, formState: { errors } } = useForm<FormInput>()
 
   const validatePhone = (value: string) => {
@@ -86,7 +84,6 @@ export default function SignupStep2 (props: { signupForm: Step1Form }) {
           showConfirmButton: false,
           timer: 1500
         })
-        history.push('/')
       })
       .catch(err => {
         console.log(err)

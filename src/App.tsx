@@ -1,30 +1,17 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import routes from './routes'
+import { Routes, Route } from 'react-router-dom'
+import { Default } from './components'
+import Login from './views/Login'
+import Signup from './views/Signup'
 
 function App() {
   return (
     <>
-      <Router>
-        <Switch>
-        {
-          routes.map((route, index) => (
-            <Route
-              key={index}
-              path={route.path}
-              exact={route.exact}
-              render={(props: any) => {
-                document.title = route.title
-                return (
-                  <route.layout {...props}>
-                    <route.component {...props} />
-                  </route.layout>
-                )
-              }}
-            />
-          ))
-        }
-        </Switch>
-      </Router>
+      <Routes>
+        <Route path="/" element={<Default />}>
+          <Route path='' element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+        </Route>
+      </Routes>
     </>
   )
 }

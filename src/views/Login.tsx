@@ -1,5 +1,6 @@
 import { Row, Col, Form, Button } from 'react-bootstrap'
 import { useForm } from 'react-hook-form'
+import { NavLink } from 'react-router-dom'
 import Swal from 'sweetalert2'
 import { registerImg, line, line3 } from '../images'
 import axios from 'axios'
@@ -79,7 +80,7 @@ export default function Login () {
               </div>
               <Button type="submit" disabled={!isValid} className='submit-btn w-100'>會員登入</Button>
               <span>沒有會員嗎？</span>
-              <a href='/signup'>前往註冊</a>
+              <NavLink to='/signup'>前往註冊</NavLink>
               <div>
               </div>
             </Form>
