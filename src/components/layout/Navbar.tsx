@@ -3,7 +3,7 @@ import { logo } from '../../images'
 export default function Nav () {
   return (
     <Navbar className='booking-navbar'>
-      <Navbar.Brand href="/">
+      <Navbar.Brand>
         <img
           src={logo}
         />
