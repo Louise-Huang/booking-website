@@ -221,7 +221,7 @@ export default function SignupStep2 (props: { signupForm: Step1Form }) {
         </Form.Group>
         <Button type="submit" className='submit-btn w-100'>完成註冊</Button>
         <span>已經有會員了嗎？</span>
-        <a href='/'>立即登入</a>
+        <a href='https://louise-huang.github.io/booking-website/'>立即登入</a>
         <div>
         </div>
       </Form>
