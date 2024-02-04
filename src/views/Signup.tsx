@@ -10,7 +10,7 @@ interface Step1Form {
 
 export default function Signup () {
   const [state, produce] = useImmer({
-    signupStep: 'step2',
+    signupStep: 'step1',
     signupForm: {}
   })
 
