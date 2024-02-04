@@ -51,7 +51,7 @@ export default function Login () {
         <Col style={{ position: 'relative' }}>
           <img src={line3} className='desktop-line' style={{ width: '100%', position: 'absolute', top: '72px' }}/>
           <img src={line} className='mobile-line' style={{ width: '100%', position: 'absolute', top: '32px' }}/>
-          <div className="login-content">
+          <div className="account-content">
             <p className='subheader'>享樂酒店，誠摯歡迎</p>
             <h1 className='header'>立即開始旅程</h1>
             <Form className='login-form' onSubmit={handleSubmit(onSubmit)}>

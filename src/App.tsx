@@ -4,7 +4,7 @@ import routes from './routes'
 function App() {
   return (
     <>
-      <Router>
+      <Router path='/'>
         <Switch>
         {
           routes.map((route, index) => (
@@ -12,11 +12,14 @@ function App() {
               key={index}
               path={route.path}
               exact={route.exact}
-              component={(props: any) => (
-                <route.layout {...props}>
-                  <route.component {...props} />
-                </route.layout>
-              )}
+              render={(props: any) => {
+                document.title = route.title
+                return (
+                  <route.layout {...props}>
+                    <route.component {...props} />
+                  </route.layout>
+                )
+              }}
             />
           ))
         }

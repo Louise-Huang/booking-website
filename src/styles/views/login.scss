@@ -7,7 +7,7 @@
   }
 }
 
-.login-content {
+.account-content {
   width: 416px;
   position: relative;
   top: 50%;  
@@ -28,7 +28,7 @@
     letter-spacing: 5%;
     margin-bottom: 40px;
   }
-  .login-form {
+  .login-form, .signup-form {
     label {
       font-size: 16px;
       font-weight: 700;
@@ -36,8 +36,26 @@
       letter-spacing: 2%;
       color: #fff;
     }
-    .input-control, .submit-btn {
+    .form-control, .submit-btn {
       padding: 16px;
+    }
+    .form-check {
+      .form-check-input {
+        width: 24px;
+        height: 24px;
+        &:checked {
+          background-color: #BF9D7D;
+          border: 1px solid #BF9D7D;
+          box-shadow: 0 0 0 .2rem rgba(191, 157, 7, 0.25) !important;
+        }
+        &:focus, &.focus {
+          border: 1px solid #BF9D7D;
+          box-shadow: 0 0 0 .2rem rgba(191, 157, 7, 0.25) !important;
+        }
+      }
+      label {
+        padding-left: 8px;
+      }
     }
     a {
       color: #BF9D7D;
@@ -84,8 +102,9 @@
     display: none;
   }
 
-  .login-content {
+  .account-content {
     width: 416px;
+    padding-bottom: 20px;
     position: relative;
     top: 50%;  
     left: 50%;
@@ -98,7 +117,7 @@
       font-size: 32px;
       line-height: 38.4px;
     }
-    .login-form {
+    .login-form, .signup-form {
       label, a, span {
         font-size: 14px;
         line-height: 21px;

@@ -1,0 +1,62 @@
+.progressbar {
+  display: flex;
+  margin-bottom: 40px;
+  .step {
+    text-align: center;
+    width: 100%;
+    p {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      color: #909090;
+    }
+    .bullet {
+      height: 32px;
+      width: 32px;
+      border-radius: 50%;
+      border: 1px solid #909090;
+      position: relative;
+      transition: 0.2s;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      span {
+        color: #909090;
+        margin: 0;
+      }
+      margin-bottom: 4px;
+    }
+    &.active {
+      p {
+        color: #fff;
+      }
+      .bullet {
+        border: none;
+        background-color: #BF9D7D;
+        span {
+          color: #fff;
+        }
+      }
+    }
+  }
+  .step1:not(.active) {
+    p {
+      color: #fff;
+    }
+    .bullet {
+    border: none;
+      background-color: #BF9D7D;
+      span {
+        font-weight: 200;
+        color: #fff;
+      }
+    }
+  }
+  .line {
+    height: 2px;
+    width: 160px;
+    background: #909090;
+    border-radius: 10px;
+    margin: 0 8px;
+  }
+}

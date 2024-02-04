@@ -7,13 +7,15 @@ const routes = [
     path: '/',
     exact: true,
     layout: Default,
-    component: Login
+    component: Login,
+    title: '會員登入｜享樂酒店'
   },
   {
     path: '/signup',
     exact: true,
     layout: Default,
-    component: Signup
+    component: Signup,
+    title: '會員註冊｜享樂酒店'
   }
 ]
 
