@@ -1,7 +1,8 @@
+import { ReactNode } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Navbar from './Navbar'
 
-const Default = ({ children }) => {
+const Default = ({ children }: { children: ReactNode }) => {
   return (
     <>
       <Navbar />

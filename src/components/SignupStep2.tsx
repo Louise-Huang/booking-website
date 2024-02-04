@@ -42,7 +42,7 @@ interface SignupObj {
 
 export default function SignupStep2 (props: { signupForm: Step1Form }) {
   const { signupForm } = props
-  const [state, produce] = useImmer({
+  const [state] = useImmer({
     yearsArray: Array.from({ length: 100 }, (_, index) => new Date().getFullYear() - index),
     monthsArray: Array.from({ length: 12 }, (_, index) => index + 1),
     daysArray: Array.from({ length: 31 }, (_, index) => index + 1),

@@ -4,7 +4,7 @@ import routes from './routes'
 function App() {
   return (
     <>
-      <Router path='/'>
+      <Router>
         <Switch>
         {
           routes.map((route, index) => (
